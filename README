@@ -1,0 +1,56 @@
+README
+
+Pentru realizarea temei am implementat algoritmul DIJKSTRA , folosind 
+matricea de adiacenta, un vector de vizitat, un vector de parinti, un vector 
+de distante.
+
+Am folosit functiile;
+
+1.initGraph - pentru alocarea dinamica a unei matrici
+
+2.addEdge - pentru adaugarea unei muchii(drum cu cost) intre 2 puncte
+
+3.livrare_ferma - pentru realizarea taskului 1 
+
+4.livrare_ferme - pentru realizarea taskului 2
+
+5.dijk - algoritmul dijkstra
+
+TASK1:
+
+Am folosit:
+
+- vector de noduri - pentru a retine tipul client/ferma
+
+- matrice de costuri
+
+-vectori de comenzi - pentru memorarea comenzilor
+
+-pentru fiecare comanda se determina drumul de la sursa la destinatie si invers,
+folosind dijkstra
+
+-o variabila total care retine costul total.
+
+TASK2:
+
+Implementarea este similara cu cea a taskului 1, difera prin faptul ca se lua in
+calcul la distanta de intoarcere, sosirea la ferma cea mai apropiata dar si 
+costul minim care poate fi obtint, asa ca se va tine cont de distanta ce urmeaza 
+pana la viitoarea comanda pentru a usura drumul dronei.
+
+DIJKSTRA:
+
+Presupune determinarea costului minim.
+
+Se foloseste o matrice de cost care va avea valorile din matricea de adiacenta,
+iar in loc de 0(drumurile care nu exista) se va initializa cu o valoare foarte 
+mare(INFINITY).
+
+Vectorul de parinti retine nodurile anterioare(parinte) ale nodurilor actuale.
+
+Vectorul de vizitat il folosim pentru a ne asigura ca nu trecem prin acelasi 
+nod.
+
+Vectorul de distante retine costul pentru fiecare nod de la nodul sursa la cel 
+destinatie.
+
